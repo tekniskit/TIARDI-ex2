@@ -77,6 +77,7 @@
     <ClCompile Include="..\server\SynchronousEventDemultiplexer.cpp" />
     <ClCompile Include="DemuxHandle.cpp" />
     <ClCompile Include="EventHandler.cpp" />
+    <ClCompile Include="IReactor.cpp" />
     <ClCompile Include="Reactor.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +86,7 @@
     <ClInclude Include="..\server\Tuble.h" />
     <ClInclude Include="DemuxTable.h" />
     <ClInclude Include="EventHandler.h" />
+    <ClInclude Include="IReactor.h" />
     <ClInclude Include="Reactor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
