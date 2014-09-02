@@ -1,12 +1,14 @@
 class Tuple {
 public:
-	getEventHandler();
-	setEventHandler(EventHandler *eh);
+	Tuple(unsigned int eventType, EventHandler* eventHandler);
+	~Tuple();
+	EventHandler* getEventHandler();
+	void setEventHandler(EventHandler *eh);
 
-	getEventType();
-	setEventType(EventType et);
+	unsigned int getEventType();
+	void setEventType(unsigned int et);
 
 private:
 	EventHandler *eventHandler_;
-	EventType eventType_;
+	unsigned int eventType_;
 };
