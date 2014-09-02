@@ -75,15 +75,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\server\SynchronousEventDemultiplexer.cpp" />
-    <ClCompile Include="DemuxHandle.cpp" />
+    <ClCompile Include="DemuxTable.cpp" />
     <ClCompile Include="EventHandler.cpp" />
     <ClCompile Include="IReactor.cpp" />
     <ClCompile Include="Reactor.cpp" />
+    <ClCompile Include="Tuple.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\server\Event.h" />
     <ClInclude Include="..\server\SynchronousEventDemultiplexer.h" />
-    <ClInclude Include="..\server\Tuble.h" />
+    <ClInclude Include="..\server\Tuple.h" />
     <ClInclude Include="DemuxTable.h" />
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="IReactor.h" />
