@@ -36,6 +36,9 @@
     <ClCompile Include="SynchronousEventDemultiplexer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NetworkEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Reactor.h">
@@ -50,13 +53,13 @@
     <ClInclude Include="IReactor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\server\Tuple.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SynchronousEventDemultiplexer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="NetworkEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tuple.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
