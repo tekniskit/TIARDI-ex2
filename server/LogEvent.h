@@ -3,11 +3,13 @@
 
 using namespace std;
 
-class LogEvent : public Event
-{
+class LogEvent : public Event{
 public:
 	LogEvent();
 	~LogEvent();
+
+	string getText();
+	void setText(string t);
 private:
 	string text_;
 };
