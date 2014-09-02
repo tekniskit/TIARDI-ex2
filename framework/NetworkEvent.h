@@ -1,12 +1,14 @@
+#include "Handle.h"
+
 class NetworkEvent {
 public:
-	HANDLE getHandle();
-	void setHandle(HANDLE h);
+	Handle* getHandle();
+	void setHandle(Handle* h);
 	
 	unsigned int getEventType();
 	void setEventType(unsigned int eventType);
 
 private:
-	HANDLE handle_;
+	Handle* handle_;
 	unsigned int eventType_;
 };
