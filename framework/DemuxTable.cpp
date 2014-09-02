@@ -9,10 +9,15 @@ DemuxTable::~DemuxTable(){
 }
 
 EventHandler* DemuxTable::getHandler(unsigned int eventType){
-	
-	return table_[eventType];	
-	// onerror
-	// return nullptr
+	EventHandler* eventHandler = table_[eventType];
+	if (eventHandler != NULL)
+	{
+		return eventHandler;
+	}
+	else
+	{
+		return nullptr;
+	}
 }
 void DemuxTable::addHandler(unsigned int eventType, EventHandler* eventHandler){
 	table_.insert(std::make_pair(eventType, eventHandler));
