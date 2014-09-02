@@ -77,10 +77,11 @@
     <ClCompile Include="..\server\SynchronousEventDemultiplexer.cpp" />
     <ClCompile Include="DemuxHandle.cpp" />
     <ClCompile Include="EventHandler.cpp" />
+    <ClCompile Include="NetworkEvent.cpp" />
     <ClCompile Include="Reactor.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\server\Event.h" />
+    <ClInclude Include="..\server\NetworkEvent.h" />
     <ClInclude Include="..\server\SynchronousEventDemultiplexer.h" />
     <ClInclude Include="..\server\Tuble.h" />
     <ClInclude Include="DemuxTable.h" />
