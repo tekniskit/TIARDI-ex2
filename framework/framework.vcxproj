@@ -77,7 +77,6 @@
     <ClCompile Include="..\server\SynchronousEventDemultiplexer.cpp" />
     <ClCompile Include="DemuxHandle.cpp" />
     <ClCompile Include="EventHandler.cpp" />
-    <ClCompile Include="IReactor.cpp" />
     <ClCompile Include="Reactor.cpp" />
   </ItemGroup>
   <ItemGroup>
