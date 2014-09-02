@@ -8,9 +8,9 @@ typedef unsigned int Event_Type;
 class IReactor
 {
 	public:
-		virtual void register_handler(EventHandler* handler, Event_Type type) = 0;
-		virtual void remove_handler(EventHandler* handler, Event_Type type) = 0;
-		virtual void handle_events(Time_Value* = 0) = 0; 
+		virtual void registerHandler(EventHandler* handler, Event_Type type) = 0;
+		virtual void removeHandler(Event_Type type) = 0;
+		virtual void handleEvents(Time_Value* = 0) = 0; 
 
 	private:
 

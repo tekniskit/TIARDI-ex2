@@ -7,9 +7,9 @@ class Reactor:IReactor
 {
 
 public:
-	void register_handler(EventHandler* handler, Event_Type type);
-	void remove_handler(EventHandler* handler, Event_Type type);
-	void handle_events(Time_Value* = 0);
+	void registerHandler(EventHandler* handler, Event_Type type);
+	void removeHandler(Event_Type type);
+	void handleEvents(Time_Value* = 0);
 
 	static IReactor& instance();
 

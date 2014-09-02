@@ -2,18 +2,18 @@
 #include "NetworkEvent.h"
 #include "EventHandler.h"
 
-void Reactor::register_handler(EventHandler* handler, Event_Type type)
+void Reactor::registerHandler(EventHandler* handler, Event_Type type)
 {
-
+	handlerTabel.addHandler(type, handler);
 }
 
-void Reactor::remove_handler(EventHandler* handler, Event_Type type)
+void Reactor::removeHandler(Event_Type type)
 {
-
+	handlerTabel.removeHandler(type);
 }
 
 
-void Reactor::handle_events(Time_Value* time)
+void Reactor::handleEvents(Time_Value* time)
 {
 	NetworkEvent event = demultiplexer.getNetworkEvent();
 	EventHandler* handler = handlerTabel.getHandler(event.getEventType());
