@@ -10,20 +10,12 @@ public:
 	void registerHandler(EventHandler* handler, Event_Type type);
 	void removeHandler(Event_Type type);
 	void handleEvents(Time_Value* = 0);
-
-	static IReactor& instance();
+	Reactor(SynchronousEventDemultiplexer* _demultiplexer);
 
 private:
-	Reactor() {};                   // Constructor? (the {} brackets) are needed here.
-	// Dont forget to declare these two. You want to make sure they
-	// are unaccessable otherwise you may accidently get copies of
-	// your singleton appearing.
-	Reactor(Reactor const&);        // Don't Implement
-	void operator=(Reactor const&); // Don't implement
-
 	// variables 
 
-	SynchronousEventDemultiplexer demultiplexer; 
+	SynchronousEventDemultiplexer* demultiplexer; 
 	DemuxTable handlerTabel;
 
 

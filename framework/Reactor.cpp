@@ -15,7 +15,7 @@ void Reactor::removeHandler(Event_Type type)
 
 void Reactor::handleEvents(Time_Value* time)
 {
-	NetworkEvent event = demultiplexer.getNetworkEvent();
+	NetworkEvent event = demultiplexer->getNetworkEvent();
 	EventHandler* handler = handlerTabel.getHandler(event.getEventType());
 
 	if (handler != nullptr)
@@ -24,8 +24,7 @@ void Reactor::handleEvents(Time_Value* time)
 	}
 }
 
-IReactor& Reactor::instance()
+Reactor::Reactor(SynchronousEventDemultiplexer* _demultiplexer)
 {
-	static Reactor inst;
-	return inst;
+	demultiplexer = _demultiplexer;
 }
