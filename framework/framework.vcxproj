@@ -74,22 +74,22 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\server\SynchronousEventDemultiplexer.cpp" />
     <ClCompile Include="DemuxTable.cpp" />
     <ClCompile Include="EventHandler.cpp" />
-    <ClCompile Include="NetworkEvent.cpp" />
     <ClCompile Include="IReactor.cpp" />
+    <ClCompile Include="NetworkEvent.cpp" />
     <ClCompile Include="Reactor.cpp" />
+    <ClCompile Include="SynchronousEventDemultiplexer.cpp" />
     <ClCompile Include="Tuple.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\server\NetworkEvent.h" />
-    <ClInclude Include="..\server\SynchronousEventDemultiplexer.h" />
-    <ClInclude Include="..\server\Tuple.h" />
     <ClInclude Include="DemuxTable.h" />
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="IReactor.h" />
+    <ClInclude Include="NetworkEvent.h" />
     <ClInclude Include="Reactor.h" />
+    <ClInclude Include="SynchronousEventDemultiplexer.h" />
+    <ClInclude Include="Tuple.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
