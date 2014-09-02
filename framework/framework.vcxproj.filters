@@ -24,10 +24,19 @@
     <ClCompile Include="EventHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DemuxHandle.cpp">
+    <ClCompile Include="IReactor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\server\SynchronousEventDemultiplexer.cpp">
+    <ClCompile Include="DemuxTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tuple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SynchronousEventDemultiplexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkEvent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,16 +50,16 @@
     <ClInclude Include="DemuxTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\server\Event.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\server\SynchronousEventDemultiplexer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\server\Tuble.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="IReactor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SynchronousEventDemultiplexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tuple.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

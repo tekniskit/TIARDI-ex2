@@ -1,13 +1,14 @@
 #pragma once
 #include "IReactor.h"
 #include "DemuxTable.h" 
+#include "SynchronousEventDemultiplexer.h"
 
 class Reactor:IReactor
 {
 
 public:
-	void register_handler(Event_Handler* handler, Event_Type type);
-	void remove_handler(Event_Handler* handler, Event_Type type);
+	void register_handler(EventHandler* handler, Event_Type type);
+	void remove_handler(EventHandler* handler, Event_Type type);
 	void handle_events(Time_Value* = 0);
 
 	static IReactor& instance();
@@ -19,5 +20,11 @@ private:
 	// your singleton appearing.
 	Reactor(Reactor const&);        // Don't Implement
 	void operator=(Reactor const&); // Don't implement
+
+	// variables 
+
+	SynchronousEventDemultiplexer demultiplexer; 
+	DemuxTable handlerTabel;
+
 
 };
