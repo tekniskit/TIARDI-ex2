@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AlarmEventHandler.h" />
+    <ClInclude Include="EventType.h" />
     <ClInclude Include="LogEventHandler.h" />
     <ClInclude Include="PatientEventHandler.h" />
     <ClInclude Include="ReactorImplementation.h" />

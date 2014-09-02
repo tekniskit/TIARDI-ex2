@@ -36,6 +36,9 @@
     <ClInclude Include="ReactorImplementation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EventType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
