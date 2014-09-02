@@ -3,10 +3,10 @@ public:
 	HANDLE getHandle();
 	void setHandle(HANDLE h);
 	
-	EventType getEventType();
-	void setEventType(eventType);
+	unsigned int getEventType();
+	void setEventType(unsigned int eventType);
 
 private:
 	HANDLE handle_;
-	EventType eventType_;
+	unsigned int eventType_;
 };
