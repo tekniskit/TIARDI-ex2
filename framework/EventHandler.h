@@ -1,6 +1,8 @@
+#include "Event.h"
+
 class EventHandler{
 public:
-	virtual void handle_run(HANDLE handle) = 0;
+	virtual void handleEvent(HANDLE handle) = 0;
 private:
-	virtual Event map_parse_event(HANDLE handle) = 0;
+	virtual Event parseEvent(HANDLE handle) = 0;
 };

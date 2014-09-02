@@ -1,12 +1,12 @@
 #include "PatientEventHandler.h"
 
 
-void PatientEventHandler::handle_event(HANDLE handle)
+void PatientEventHandler::handleEvent(HANDLE handle)
 {
 
 }
 
-Event PatientEventHandler::map_parse_event(HANDLE handle)
+Event PatientEventHandler::parseEvent(HANDLE handle)
 {
 
 }
