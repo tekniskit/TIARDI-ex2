@@ -30,6 +30,9 @@
     <ClCompile Include="..\server\SynchronousEventDemultiplexer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IReactor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Reactor.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\server\Tuble.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IReactor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
