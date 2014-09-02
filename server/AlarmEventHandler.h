@@ -5,5 +5,5 @@ class AlarmEventHandler : EventHandler
 public:
 	void handleEvent(HANDLE handle);
 private:
-	Event parseEvent(HANDLE handle);
+	Event* parseEvent(HANDLE handle);
 };
