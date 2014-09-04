@@ -1,3 +1,4 @@
+#pragma once
 #include "NetworkEvent.h"
 
 class SynchronousEventDemultiplexer {

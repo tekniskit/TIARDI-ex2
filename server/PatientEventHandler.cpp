@@ -5,19 +5,18 @@
 #include <vector>
 #include <cstdlib>
 
-std::vector<std::string> x = split("one:two::three", ':');
 using namespace std;
 
-void PatientEventHandler::handleEvent(HANDLE handle)
+void PatientEventHandler::handleEvent(Handle* handle)
 {
 	PatientEvent* patientEvent = static_cast<PatientEvent*>(parseEvent(handle));
-	std::cout << "Type: " << patientEvent->getType << " Value: " << patientEvent->getValue() << '\n';
+	std::cout << "Type: " << patientEvent->getType() << " Value: " << patientEvent->getValue() << '\n';
 }
 
-Event* PatientEventHandler::parseEvent(HANDLE handle)
+Event* PatientEventHandler::parseEvent(Handle* handle)
 {
 	//Expected protocol "id;type;value"
-	string input = handle.receive();
+	string input = handle->receive();
 
 	std::string delimiter = ";";
 	size_t pos = 0;
