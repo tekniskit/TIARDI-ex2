@@ -1,8 +1,9 @@
-#include "Event.h"
+#pragma once
+#include "../server/Event.h"
 
 class EventHandler{
 public:
-	virtual void handleEvent(HANDLE handle) = 0;
+	virtual void handleEvent(Handle* handle) = 0;
 private:
-	virtual Event* parseEvent(HANDLE handle) = 0;
+	virtual Event* parseEvent(Handle* handle) = 0;
 };
