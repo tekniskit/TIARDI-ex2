@@ -2,5 +2,5 @@
 
 class SynchronousEventDemultiplexer {
 public:
-	NetworkEvent getNetworkEvent();
+	virtual NetworkEvent getNetworkEvent() = 0;
 };
