@@ -7,4 +7,5 @@ public:
 
 private:
 	unsigned int calledCounter_ = 0;
+	HandleStub handle_;
 };
