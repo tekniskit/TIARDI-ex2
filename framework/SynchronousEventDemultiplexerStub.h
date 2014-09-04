@@ -1,7 +1,7 @@
 #pragma once
 #include "SynchronousEventDemultiplexer.h"
 
-class SynchronousEventDemultiplexerStub : SynchronousEventDemultiplexer {
+class SynchronousEventDemultiplexerStub : public SynchronousEventDemultiplexer {
 public:
 	NetworkEvent getNetworkEvent();
 
