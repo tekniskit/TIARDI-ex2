@@ -11,11 +11,11 @@ PatientEvent::~PatientEvent()
 }
 
 
-int PatientEvent::getValue(){
+string PatientEvent::getValue(){
 	return value_;
 }
 
-void PatientEvent::setValue(int v){
+void PatientEvent::setValue(string v){
 	value_ = v;
 }
 
