@@ -9,14 +9,14 @@ class AlarmEvent : public Event{
 public:
 	
 
-	int getPriority();
-	void setPriority(int i);
+	string getPriority();
+	void setPriority(string i);
 
 	string getComment();
 	void setComment(string c);
 
 private:
-	int priority_;
+	string priority_;
 	string comment_;
 
 };

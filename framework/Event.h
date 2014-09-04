@@ -2,7 +2,7 @@
 class Event
 {
 public:
-	Event();
-	virtual ~Event();
+	Event(){};
+	virtual ~Event(){};
 };
 

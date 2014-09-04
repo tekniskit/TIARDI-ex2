@@ -3,11 +3,12 @@
 
 NetworkEvent SynchronousEventDemultiplexerStub::getNetworkEvent() {
 	NetworkEvent networkEvent;
-
+	_sleep(500);
 	calledCounter_++;
 
 	if (calledCounter_ == 1) {
-		handle_ = HandleStub("1;Event1");
+		// Log: Expected protocol "id;text"
+		handle_ = HandleStub("1;TEXT to log!");
 
 		networkEvent.setEventType(1);
 		networkEvent.setHandle((Handle*) &handle_);
@@ -16,7 +17,8 @@ NetworkEvent SynchronousEventDemultiplexerStub::getNetworkEvent() {
 	}
 
 	if (calledCounter_ == 2) {
-		handle_ = HandleStub("2;Event2");
+		// Alarm: Expected protocol "id;comment;priority"
+		handle_ = HandleStub("2;Alarm comment;HIGH priority");
 
 		networkEvent.setEventType(2);
 		networkEvent.setHandle((Handle*) &handle_);
@@ -25,6 +27,7 @@ NetworkEvent SynchronousEventDemultiplexerStub::getNetworkEvent() {
 	}
 
 	if (calledCounter_ == 3) {
+		// Patient
 		handle_ = HandleStub("3;dame;Kirsten");
 
 		networkEvent.setEventType(3);

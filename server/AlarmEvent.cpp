@@ -4,11 +4,11 @@
 
 
 
-int AlarmEvent::getPriority(){
+string AlarmEvent::getPriority(){
 	return priority_;
 }
 
-void AlarmEvent::setPriority(int i){
+void AlarmEvent::setPriority(string i){
 	priority_ = i;
 }
 
