@@ -1,5 +1,6 @@
 #pragma once
 #include "SynchronousEventDemultiplexer.h"
+#include "HandleStub.h"
 
 class SynchronousEventDemultiplexerStub : public SynchronousEventDemultiplexer {
 public:

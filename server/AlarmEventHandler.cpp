@@ -13,9 +13,6 @@ void AlarmEventHandler::handleEvent(Handle* handle)
 
 Event* AlarmEventHandler::parseEvent(Handle* handle)
 {
-	//TODO: Get some stuff out of the handle and convert it to an AlarmEvent.
-	
-	
 	//Expected protocol "id;comment;priority"
 	string input = handle->receive();
 

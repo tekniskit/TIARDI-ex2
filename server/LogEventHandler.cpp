@@ -12,7 +12,24 @@ void LogEventHandler::handleEvent(Handle* handle)
 
 Event* LogEventHandler::parseEvent(Handle* handle)
 {
-	//TODO: Get some stuff out of the handle and convert it to an AlarmEvent.
-	Event *test = new LogEvent();
-	return test;
+	//Expected protocol "id;text"
+	string input = handle->receive();
+
+	std::string delimiter = ";";
+	size_t pos = 0;
+	std::string token;
+	LogEvent *event = new LogEvent();
+	int count = 0;
+
+	while ((pos = input.find(delimiter)) != std::string::npos) {
+		token = input.substr(0, pos);		
+		std::cout << token << std::endl;
+		input.erase(0, pos + delimiter.length());
+		count++;
+	}
+	//value
+	event->setText(input);
+
+	return event;
+
 }

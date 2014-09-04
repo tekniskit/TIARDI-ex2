@@ -4,6 +4,7 @@
 
 class HandleStub : Handle {
 public:
+	HandleStub(){};
 	HandleStub(std::string data);
 
 	void send(std::string data);
