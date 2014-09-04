@@ -79,15 +79,19 @@
     <ClCompile Include="IReactor.cpp" />
     <ClCompile Include="NetworkEvent.cpp" />
     <ClCompile Include="Reactor.cpp" />
-    <ClCompile Include="SynchronousEventDemultiplexer.cpp" />
+    <ClCompile Include="HandleStub.cpp" />
+    <ClCompile Include="SynchronousEventDemultiplexerStub.cpp" />
     <ClCompile Include="Tuple.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DemuxTable.h" />
     <ClInclude Include="EventHandler.h" />
+    <ClInclude Include="SynchronousEventDemultiplexerStub.h" />
     <ClInclude Include="IReactor.h" />
     <ClInclude Include="NetworkEvent.h" />
     <ClInclude Include="Reactor.h" />
+    <ClInclude Include="Handle.h" />
+    <ClInclude Include="HandleStub.h" />
     <ClInclude Include="SynchronousEventDemultiplexer.h" />
     <ClInclude Include="Tuple.h" />
   </ItemGroup>

@@ -1,10 +1,10 @@
 #include "NetworkEvent.h"
 
-HANDLE NetworkEvent::getHandle() {
+Handle* NetworkEvent::getHandle() {
 	return handle_;
 };
 
-void NetworkEvent::setHandle(HANDLE handle) {
+void NetworkEvent::setHandle(Handle* handle) {
 	handle_ = handle;
 };
 
