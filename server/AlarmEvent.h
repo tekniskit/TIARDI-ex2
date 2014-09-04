@@ -1,4 +1,5 @@
-#include "Event.h"
+#pragma once
+#include "../framework/Event.h"
 #include <string>
 
 using namespace std;
@@ -6,8 +7,7 @@ using namespace std;
 
 class AlarmEvent : public Event{
 public:
-	AlarmEvent();
-	~AlarmEvent();
+	
 
 	int getPriority();
 	void setPriority(int i);

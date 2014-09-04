@@ -1,14 +1,7 @@
 #include "AlarmEvent.h"
 
 
-AlarmEvent::AlarmEvent()
-{
-}
 
-
-AlarmEvent::~AlarmEvent()
-{
-}
 
 
 int AlarmEvent::getPriority(){

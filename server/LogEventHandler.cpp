@@ -4,13 +4,13 @@
 
 using namespace std;
 
-void LogEventHandler::handleEvent(HANDLE handle)
+void LogEventHandler::handleEvent(Handle* handle)
 {
 	LogEvent* logEvent = static_cast<LogEvent*>(parseEvent(handle));
 	std::cout << "Text: " << logEvent->getText() << '\n';
 }
 
-Event* LogEventHandler::parseEvent(HANDLE handle)
+Event* LogEventHandler::parseEvent(Handle* handle)
 {
 	//TODO: Get some stuff out of the handle and convert it to an AlarmEvent.
 	Event *test = new LogEvent();

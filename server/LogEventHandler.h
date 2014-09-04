@@ -1,9 +1,10 @@
+#pragma once
 #include "EventHandler.h"
 
 class LogEventHandler : EventHandler
 {
 public:
-	void handleEvent(HANDLE handle);
+	void handleEvent(Handle* handle);
 private:
-	Event* parseEvent(HANDLE handle);
+	Event* parseEvent(Handle* handle);
 };

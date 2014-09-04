@@ -1,9 +1,10 @@
-#include "EventHandler.h"
+#pragma once
+#include "../framework/EventHandler.h"
 
 class AlarmEventHandler : EventHandler
 {
 public:
-	void handleEvent(HANDLE handle);
+	void handleEvent(Handle* handle);
 private:
-	Event* parseEvent(HANDLE handle);
+	Event* parseEvent(Handle* handle);
 };

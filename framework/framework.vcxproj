@@ -75,7 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DemuxTable.cpp" />
-    <ClCompile Include="EventHandler.cpp" />
     <ClCompile Include="IReactor.cpp" />
     <ClCompile Include="NetworkEvent.cpp" />
     <ClCompile Include="Reactor.cpp" />
@@ -85,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DemuxTable.h" />
+    <ClInclude Include="Event.h" />
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="SynchronousEventDemultiplexerStub.h" />
     <ClInclude Include="IReactor.h" />
