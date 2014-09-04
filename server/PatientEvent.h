@@ -8,14 +8,14 @@ public:
 	PatientEvent();
 	~PatientEvent();
 
-	int getValue();
-	void setValue(int v);
+	string getValue();
+	void setValue(string v);
 
 	string getType();
 	void setType(string t);
 
 private:
-	int value_;
+	string value_;
 	string type_;
 };
 

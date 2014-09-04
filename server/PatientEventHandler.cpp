@@ -1,7 +1,11 @@
 #include "PatientEventHandler.h"
 #include "PatientEvent.h"
 #include <iostream>
+#include <sstream>
+#include <vector>
+#include <cstdlib>
 
+std::vector<std::string> x = split("one:two::three", ':');
 using namespace std;
 
 void PatientEventHandler::handleEvent(HANDLE handle)
@@ -12,7 +16,29 @@ void PatientEventHandler::handleEvent(HANDLE handle)
 
 Event* PatientEventHandler::parseEvent(HANDLE handle)
 {
-	//TODO: Get some stuff out of the handle and convert it to an AlarmEvent.
-	Event *test = new PatientEvent();
-	return test;
+	//Expected protocol "id;type;value"
+	string input = handle.receive();
+
+	std::string delimiter = ";";
+	size_t pos = 0;
+	std::string token;
+	PatientEvent *event = new PatientEvent();
+	int count = 0;
+
+	while ((pos = input.find(delimiter)) != std::string::npos) {
+		token = input.substr(0, pos);
+		//type
+		if (count == 1)
+		{
+			event->setType(token);
+		}
+
+		std::cout << token << std::endl;
+		input.erase(0, pos + delimiter.length());
+		count++;
+	}
+	//value
+	event->setValue(input);
+
+	return event;
 }
